@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaIntern - Apply</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+<style>
+     h1 {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 300px;
+            margin: 50px;
+            
+        }
+        .card:hover {
+            transform: scale(1.05);
+            color: #fff;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="./Images/logo.png"><b>  <span id="heading1">NovaIntern</span></b>&nbsp;
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a class="active" href="apply.html">Apply</a></li>
+       </ul>
+    </nav>
+    <h1>INTERNSHIPS WE OFFER!</h1>
+    <div class="card-container">
+        <div class="card"><a href="./apply_form/cse.html" target="_blank"> 
+            <img src="./Images/cse.png" alt="CSE">
+            <div class="card-content">
+                <h3 style="text-decoration: none;">Computer Science Engineering</h3>
+            </div></a>
+        </div>
+        <div class="card"><a href="./apply_form/ece.html" target="_blank"> 
+            <img src="./Images/ece.png" alt="ECE">
+            <div class="card-content">
+                <h3>Electronics and Communication Engineering</h3>
+            </div>
+        </div></a>
+        <div class="card">
+            <img src="./Images/ee.png" alt="EE">
+            <div class="card-content">
+                <h3>Electrical Engineering</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

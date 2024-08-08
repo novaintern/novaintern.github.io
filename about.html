@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>About Us - NovaIntern</title>
+    <style>
+      
+      .about_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        padding-top: 90px;
+      }
+
+      .about_card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        max-width: 1000px;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      .card img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card-content h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding: 20px;
+        display: flex;
+      }
+      #main {
+        text-align: center;
+        margin-top: 20px;
+        align-items: center;
+      }
+      .card-content p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about_container {
+    padding: 15px;
+    padding-top: 60px;
+    display: block;
+  }
+
+  .card-content h1 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+  .about_container img{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-content h1 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .card-content p {
+    font-size: 12px;
+  }
+}
+
+    
+    </style>
+  </head>
+  <body>
+    <!-- Background animation -->
+    <div id="background-animation">
+      <div class="square"></div>
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="circle"></div>
+      <div class="hexagon"></div>
+      <div class="triangle-down"></div>
+    </div>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="./Images/logo.png" /><b>
+          <span class="heading1">NovaIntern</span></b
+        >&nbsp;
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="apply.html" class="futuristic-button">Apply</a></li>
+      </ul>
+    </nav>
+    <h1 id="main">About Us !</h1>
+    <div class="about_container">
+      <img id="randomImage" s src="./Images/6.png" alt="About Us Image" />
+      <div class="about_card">
+        <div class="card-content">
+          <h1>About Us</h1>
+          <p>
+            Welcome to NovaIntern! We are a dedicated platform committed to
+            bridging the gap between academic learning and industry experience.
+            Our mission is to empower students by providing them with real-world
+            project experience and the necessary skills to excel in their
+            careers.
+          </p>
+          <br />
+          <p>
+            At NovaIntern, we believe in hands-on learning. We offer students
+            the opportunity to work on industry-level projects that not only
+            enhance their technical skills but also give them a taste of
+            real-world challenges. Our projects are designed to be engaging,
+            challenging, and highly educational, ensuring that students are
+            well-prepared for their future careers.
+          </p>
+          <br />
+          <p>
+            We understand that many students are unsure of their career paths.
+            That's where we come in. Our team of experienced mentors is here to
+            guide students through their journey, helping them identify their
+            strengths and interests, and providing them with the direction they
+            need to succeed.
+          </p>
+          <br />
+          <p>
+            Creating a strong resume is crucial for job seekers. We provide
+            personalized resume-building services that highlight students'
+            skills and experiences in the best possible light. Our resources
+            include templates, tips, and one-on-one coaching to ensure that
+            every student has a standout resume.
+          </p>
+          <br />
+          <p>
+            We also offer a wealth of high-quality resources, including
+            tutorials, Notes, and Books/PDFs, to help students stay up-to-date
+            with the latest trends and technologies. Our goal is to equip
+            students with the knowledge and skills they need to thrive in the
+            competitive job market.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br><br><br>
+    <footer>
+        <div class="footer-logo">
+            <img src="./Images/logo.png" alt="NovaIntern Logo">
+            <p>At NovaIntern, we aim to provide exceptional opportunities for interns to learn, grow, and excel in their careers.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Find more</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-beat-fade"></i> &nbsp; LinkedIn</a></li>
+                <li><a href="https://www.telegram.org" target="_blank"> <i class="fa-brands fa-telegram fa-beat-fade"></i> &nbsp; Telegram</a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-beat-fade"></i>  &nbsp; YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-address">
+            <h4>Address</h4>
+            
+            <p><i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp; Kolkata, West Bengal,
+         India</p>
+         
+            <p> <i class="fa-regular fa-envelope fa-beat-fade"></i> &nbsp; info.novaintern@gmail.com</p>
+        </div> 
+
+    </footer>
+    <hr>
+    <footer style="justify-content: center;">
+      <p> &copy; 2024 NovaIntern. All rights reserved.</p>
+    </footer>
+    <script>
+      window.addEventListener('load', function() {
+          const imageElement1 = document.getElementById('randomImage');
+          const imageElement2 = document.getElementById('randomImage2');
+          const imageArray1 = ['./Images/1.png','./Images/3.png', './Images/4.png', './Images/5.png', './Images/6.png', './Images/7.png', './Images/8.png', './Images/9.png', './Images/10.png'];
+          const imageArray2 = ['./Images/1.png','./Images/2.png', './Images/3.png', './Images/4.png', './Images/5.png', './Images/6.png', './Images/7.png', './Images/8.png', './Images/9.png', './Images/10.png'];
+      
+          const randomIndex1 = Math.floor(Math.random() * imageArray1.length);
+          const randomIndex2 = Math.floor(Math.random() * imageArray2.length);
+      
+          imageElement1.src = imageArray1[randomIndex1];
+          imageElement2.src = imageArray2[randomIndex2];
+      });
+      
+      
+          
+          </script>
+  </body>
+</html>

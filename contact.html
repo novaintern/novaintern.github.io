@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <title>About Us - NovaIntern</title>
+    <style>
+    
+       
+        .about_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            padding-top: 90px;
+        }
+
+        .about_card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            max-width: 1000px;
+            animation: fadeIn 1.5s ease-in-out;
+            width: 100%;
+        }
+
+        .about_card img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .card-content h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        input, textarea {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d146ec;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #da63d0;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about_card {
+                flex-direction: column;
+            }
+
+            .about_card img,
+            .card-content {
+                width: 100%;
+            }
+
+            .card-content {
+                padding: 10px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                background: #333;
+                left: 0;
+            }
+
+            ul.show {
+                display: flex;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+          <!-- Background animation -->
+          <div id="background-animation">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="circle"></div>
+            <div class="hexagon"></div>
+            <div class="triangle-down"></div>
+            
+          </div>
+    <nav id="navbar">
+             <div class="logo">
+                <img src="./Images/logo.png"><b> <span class="heading1">NovaIntern</span></b>&nbsp;
+             </div>
+             <input type="checkbox" id="click">
+             <label for="click" class="menu-btn">
+             <i class="fas fa-bars"></i>
+             </label>
+             <ul>
+                <li><a href="./index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a  class="active" href="contact.html">Contact</a></li>
+              <li><a href="apply.html" class="futuristic-button">Apply</a></li>
+            </ul>
+          </nav>
+    <div class="about_container">
+        <h1 class="main">Contact Us!</h1> <br>
+        <div class="about_card">
+            <img src="./Images/9.png" alt="About Us Image" />
+            <div class="card-content">
+                <section id="contact">
+                    <h1>Contact Us</h1>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe9HhFpm0oehnzbbRtcQ3_a2U51Ji8vxpWIzwJpgswvzcSezg/formResponse" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="entry.1969112847" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="entry.2045731702" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="entry.1713452818" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="./Images/logo.png" alt="NovaIntern Logo">
+            <p>At NovaIntern, we aim to provide exceptional opportunities for interns to learn, grow, and excel in their careers.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Find more</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-beat-fade"></i> &nbsp; LinkedIn</a></li>
+                <li><a href="https://www.telegram.org" target="_blank"> <i class="fa-brands fa-telegram fa-beat-fade"></i> &nbsp; Telegram</a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-beat-fade"></i>  &nbsp; YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-address">
+            <h4>Address</h4>
+            
+            <p><i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp; Kolkata, West Bengal,
+         India</p>
+         
+            <p> <i class="fa-regular fa-envelope fa-beat-fade"></i> &nbsp; info.novaintern@gmail.com</p>
+        </div> 
+
+    </footer>
+    <hr>
+    <footer style="justify-content: center;">
+      <p> &copy; 2024 NovaIntern. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>
